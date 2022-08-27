@@ -19,13 +19,17 @@
 							"\r",
 							"pm.test(\"Status code name has string\", function () {\r",
 							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"pm.test(\"count\", function () {\r",
+							"    pm.expect(responseJson.animals).to.eql(\"animals\");\r",
+							"    pm.expect(responseJson.count).to.eql(\"27\");\r",
 							"});"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"_postman_id": "566e00ab-c7be-4e9a-a1d5-6613bd7678d8",
+			"id": "566e00ab-c7be-4e9a-a1d5-6613bd7678d8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -93,7 +97,7 @@
 					}
 				}
 			],
-			"_postman_id": "4b749d8f-f01f-4983-895f-19791bb3b86c",
+			"id": "4b749d8f-f01f-4983-895f-19791bb3b86c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -166,7 +170,7 @@
 	],
 	"variable": [
 		{
-			"id": "57eb493b-3d57-4cb7-906f-b31367614372",
+			"id": "9434b13c-0fbc-4749-b974-0375bac45ea9",
 			"key": "url",
 			"value": "https://api.publicapis.org/entries",
 			"type": "string"
