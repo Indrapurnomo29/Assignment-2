@@ -12,5 +12,20 @@ https://api.publicapis.org/entries
 ## Services
 ### GET/entries
 ## Parameters
-![parameters](https://user-images.githubusercontent.com/65549993/187020954-693cd1ef-fc4b-4f33-b9c8-6a645fb12d59.jpg)
+
+| No | Parameter     | Data Type | Description                             | Required |
+| -- | ------------- | --------- | --------------------------------------- | -------- |
+| 1  | title         | string    | name of entry (matches via              | No       |
+                                 | substring -i.e. "at" would return "cat" |          |
+                                 | and "atlas")                            |          |
+| 2  | description   | string    | description of entry (matches via       | No       |    
+                                 | substring)                              |
+| 3  | auth          | string    | auth type of entry (can only be         | No       | 
+                                 | values matching in project or null)     |
+| 4  | https         | string    | return entries that support HTTPS or    | No       |
+                                 | not                                     | 
+| 5  | cors          | string    | CORS support for entry ("yes", "no",    | No       | 
+                                 | or "unknown")                           |
+| 6  | category      | string    | return entries of a specific category   | No       |
+
 
