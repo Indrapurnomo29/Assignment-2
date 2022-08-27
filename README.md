@@ -16,16 +16,16 @@ https://api.publicapis.org/entries
 | No | Parameter     | Data Type | Description                             | Required |
 | -- | ------------- | --------- | --------------------------------------- | -------- |
 | 1  | title         | string    | name of entry (matches via              | No       |
-                                 | substring -i.e. "at" would return "cat" |          |
-                                 | and "atlas")                            |          |
+|    |               |           | substring -i.e. "at" would return "cat" |          |
+|    |               |           | and "atlas")                            |          |
 | 2  | description   | string    | description of entry (matches via       | No       |    
-                                 | substring)                              |
+|    |               |           | substring)                              |          |
 | 3  | auth          | string    | auth type of entry (can only be         | No       | 
-                                 | values matching in project or null)     |
+|    |               |           | values matching in project or null)     |          |
 | 4  | https         | string    | return entries that support HTTPS or    | No       |
-                                 | not                                     | 
+|    |               |           | not                                     |          |
 | 5  | cors          | string    | CORS support for entry ("yes", "no",    | No       | 
-                                 | or "unknown")                           |
+|    |               |           | or "unknown")                           |          |
 | 6  | category      | string    | return entries of a specific category   | No       |
 
 
