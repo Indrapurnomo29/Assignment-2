@@ -20,9 +20,9 @@
 							"pm.test(\"Status code name has string\", function () {\r",
 							"    pm.response.to.have.status(\"OK\");\r",
 							"});\r",
-							"pm.test(\"count\", function () {\r",
-							"    pm.expect(responseJson.animals).to.eql(\"animals\");\r",
-							"    pm.expect(responseJson.count).to.eql(\"27\");\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"27\");\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -170,7 +170,7 @@
 	],
 	"variable": [
 		{
-			"id": "9434b13c-0fbc-4749-b974-0375bac45ea9",
+			"id": "e83d41c2-74cf-454f-9ca6-40777b965dcb",
 			"key": "url",
 			"value": "https://api.publicapis.org/entries",
 			"type": "string"
