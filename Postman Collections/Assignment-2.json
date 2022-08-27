@@ -91,6 +91,10 @@
 							"\r",
 							"pm.test(\"Status code name has string\", function () {\r",
 							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"6\");\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -170,7 +174,7 @@
 	],
 	"variable": [
 		{
-			"id": "e83d41c2-74cf-454f-9ca6-40777b965dcb",
+			"id": "c45de8c0-a5ec-44f2-b201-3849992684fc",
 			"key": "url",
 			"value": "https://api.publicapis.org/entries",
 			"type": "string"
