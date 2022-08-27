@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "72a960e6-afd6-434d-bace-8a57c73a60ec",
+		"name": "Assignment-2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Animals",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8ed2a0fb-e750-4177-a8a8-7fd8020d59f4",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "566e00ab-c7be-4e9a-a1d5-6613bd7678d8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}?title&description=&auth&https&cors&category=animals",
+					"host": [
+						"{{url}}"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": null,
+							"description": "name of entry (matches via\nsubstring -i.e. \"at\" would return \"cat\"\nand \"atlas\")"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"description": "description of entry (matches via\nsubstring)"
+						},
+						{
+							"key": "auth",
+							"value": null,
+							"description": "auth type of entry (can only be\nvalues matching in project or null)"
+						},
+						{
+							"key": "https",
+							"value": null,
+							"description": "return entries that support HTTPS or\nnot"
+						},
+						{
+							"key": "cors",
+							"value": null,
+							"description": "CORS support for entry (\"yes\", \"no\",\nor \"unknown\")"
+						},
+						{
+							"key": "category",
+							"value": "animals",
+							"description": "return entries of a specific category"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Holidays",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1d5d9282-6c36-421a-99a1-2cebbece8170",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "4b749d8f-f01f-4983-895f-19791bb3b86c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}?title&description=holidays&auth&https&cors&category=",
+					"host": [
+						"{{url}}"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": null,
+							"description": "name of entry (matches via\nsubstring -i.e. \"at\" would return \"cat\"\nand \"atlas\")"
+						},
+						{
+							"key": "description",
+							"value": "holidays",
+							"description": "description of entry (matches via\nsubstring)"
+						},
+						{
+							"key": "auth",
+							"value": null,
+							"description": "auth type of entry (can only be\nvalues matching in project or null)"
+						},
+						{
+							"key": "https",
+							"value": null,
+							"description": "return entries that support HTTPS or\nnot"
+						},
+						{
+							"key": "cors",
+							"value": null,
+							"description": "CORS support for entry (\"yes\", \"no\",\nor \"unknown\")"
+						},
+						{
+							"key": "category",
+							"value": "",
+							"description": "return entries of a specific category"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d7c43601-8e42-40a4-aebc-964f12f2799e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "90065400-a8b9-4174-bb1a-cb2a225868ff",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "57eb493b-3d57-4cb7-906f-b31367614372",
+			"key": "url",
+			"value": "https://api.publicapis.org/entries",
+			"type": "string"
+		}
+	]
+}
